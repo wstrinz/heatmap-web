@@ -1,0 +1,22 @@
+{% extends "templates/base.html" %}
+
+{% block content %}
+
+<!-- <br/> -->
+<!-- <div id="messages"></div> -->
+<!-- <textarea id="message"></textarea> -->
+<!-- <br/> -->
+<!-- <input type="text" id="user"></input> -->
+<!-- <br/> -->
+<div id="the-map" style="height: 500px"></div>
+<!--  scripts -->
+<script type="text/javascript" src="{{servlet-context}}/js/leaflet.js"></script>
+<link rel="stylesheet" type="text/css" href="{{servlet-context}}/css/leaflet.css">
+<script src="{{servlet-context}}/js/out/goog/base.js" type="text/javascript"></script>
+<script src="{{servlet-context}}/js/site.js" type="text/javascript"></script>
+<script type="text/javascript">goog.require("heatmap_web.main");</script>
+<!-- <script type="text/javascript" src="{{servlet-context}}/js/site.js"></script> -->
+<script type="text/javascript">
+  heatmap_web.main.init();
+</script>
+{% endblock %}

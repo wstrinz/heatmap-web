@@ -1,0 +1,18 @@
+{
+  "name": "heatmap-web",
+  "version": "0.0.0",
+  "authors": [
+    "Will Strinz <wstrinz@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "leaflet": "~0.7.3"
+  }
+}
